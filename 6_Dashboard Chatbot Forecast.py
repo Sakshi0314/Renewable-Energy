@@ -20,7 +20,7 @@ def read_imgs(imgs_list):
     return path_list  # Return the list of encoded images
  
 # Specify the list of image files to be encoded
-file_list = ["./icon2.svg","./nature.svg"]
+file_list = ["./icon2.svg","./Nature.svg"]
 # Read and encode the images
 img_list = read_imgs(file_list)
  
