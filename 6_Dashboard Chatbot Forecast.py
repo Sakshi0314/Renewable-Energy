@@ -32,7 +32,7 @@ def read_csv_into_dataframe(csv_name):
 # Define a function to initialize the chatbot
 def initialize_chatbot():
     # Read CSV data into a Pandas DataFrame
-    data_frame = read_csv_into_dataframe(r"C:\Users\sakskuma\OneDrive - Capgemini\Documents\Renewable Energy POC\Merged_Facts.csv")
+    data_frame = read_csv_into_dataframe("Merged.csv")
     # Initialize ChatGroq with temperature and model name
     llm = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
     # Create a chatbot agent using ChatGroq and Pandas DataFrame
@@ -50,7 +50,7 @@ def load_data(file_path):
     data = pd.read_csv(file_path)
     return data
 # Load data for forecasting
-forecast_data = load_data(r"C:\Users\sakskuma\OneDrive - Capgemini\Documents\Renewable Energy POC\Streamlit Renewable Energy\Forecasted_Final_Dataset.csv")
+forecast_data = load_data("Forecasted_Final_CSV_Dataset.csv")
  
 countries = [
     "United Arab Emirates", "United Kingdom", "United States", "Venezuela", "Vietnam", "Zambia", "Zimbabwe", "USSR",
