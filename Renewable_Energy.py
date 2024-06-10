@@ -146,7 +146,7 @@ def read_csv_into_dataframe(csv_name):
     return df
 
 def initialize_chatbot():
-    data_frame = read_csv_into_dataframe(r"C:\Users\sakskuma\OneDrive - Capgemini\Documents\Renewable Energy POC\Merged.csv")  # Replace with the path to your CSV file
+    data_frame = read_csv_into_dataframe("Merged.csv")  # Replace with the path to your CSV file
     llm = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
     p_agent = create_pandas_dataframe_agent(llm=llm, df=data_frame, verbose=True, handle_parsing_errors=True)
     return p_agent
@@ -247,7 +247,7 @@ def load_data(file_path):
     data = pd.read_csv(file_path)
     return data
 
-forecasting_data = load_data(r"C:\Users\sakskuma\OneDrive - Capgemini\Documents\Renewable Energy POC\Streamlit Renewable Energy\Forecasted_Final_CSV_Dataset.csv")
+forecasting_data = load_data("Forecasted_Final_CSV_Dataset.csv")
 
 def forecasting_chatbot():
     country = st.sidebar.selectbox("Select Country", countries)
