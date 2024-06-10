@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt # type: ignore
+import matplotlib.pyplot as plt
 from langchain_experimental.agents import create_pandas_dataframe_agent
 from langchain_experimental.agents.agent_toolkits.csv.base import create_csv_agent
 from langchain_groq import ChatGroq
