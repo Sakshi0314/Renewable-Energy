@@ -77,8 +77,8 @@ st.markdown(
     /* Sun emoji at the top right */
     .sun {
         position: fixed;
-        top: 20px;
-        right: 20px;
+        top: 35px;
+        right: 35px;
         font-size: 60px;  /* Increase the font-size for a bigger sun */
     }
     /* Center the main heading, make it bold and cursive, and position it higher */
