@@ -291,7 +291,7 @@ elif chatbot_option == "Forecasting Chatbot 🔮":
 st.markdown('<div class="main-title">Renewable Energy Project</div>', unsafe_allow_html=True)
 
 # Embed the Power BI report
-power_bi_report_url = "https://app.powerbi.com/reportEmbed?reportId=cecb7dd7-2dbf-4a63-9682-65a737ae83ea&autoAuth=true&ctid=76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61"
+power_bi_report_url = "https://app.powerbi.com/reportEmbed?reportId=8ce894b8-ca32-40f8-a4c6-84a41fda4a18&autoAuth=true&ctid=76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61"
 st.markdown(f'<iframe width="1000" height="600" src="{power_bi_report_url}" frameborder="0" allowFullScreen="true"></iframe>', unsafe_allow_html=True)
 
 
