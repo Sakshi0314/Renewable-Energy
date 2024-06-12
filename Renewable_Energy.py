@@ -63,7 +63,7 @@ st.markdown(
         background-size: contain;
         background-repeat: no-repeat;
         opacity: 0.8;
-        z-index: 9999;
+        z-index: -1;
         animation: fall 5s linear infinite;
     }
     @keyframes fall {
