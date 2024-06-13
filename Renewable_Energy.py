@@ -138,7 +138,7 @@ for message in st.session_state.messages:
 user_input = st.sidebar.text_input("You:", "")
 
 # Set environment variable for the chatbot API key
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "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"
 
 # Leaf Chatbot functionality
 def read_csv_into_dataframe(csv_name):
