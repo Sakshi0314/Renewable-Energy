@@ -146,10 +146,11 @@ def read_csv_into_dataframe(csv_name):
     return df
 
 def initialize_chatbot():
-    data_frame = read_csv_into_dataframe("Merged.csv")  # Replace with the path to your CSV file
+    data_frame = read_csv_into_dataframe("Merged.csv")
     llm = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
-    p_agent = create_pandas_dataframe_agent(llm=llm, df=data_frame, verbose=True, handle_parsing_errors=True)
+    p_agent = create_pandas_dataframe_agent(llm=llm, df=data_frame, allow_dangerous_code=True)
     return p_agent
+
 
 def get_chatbot_agent():
     if 'chatbot_agent' not in st.session_state:
